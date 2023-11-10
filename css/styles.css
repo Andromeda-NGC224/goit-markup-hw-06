@@ -91,20 +91,202 @@ body {
 .span-logo {
     color: #2E2F42;
 }
-
 /* /Header Mob Styles */
 
 /* Main Hero Mob Styles */
+.main-section-hero {
+    width: 320px;
+    background-color: #2e2f42;
+    padding: 72px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/background-hero-mob.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
 
-/* /Main Hero Mob Styles */
+.main-section-hero-text {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    max-width: 288px;
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+}
 
+.main-section-hero-button {
+    background-color: #4D5AE5;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    display: block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-style: none;
+    min-width: 169px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-section-hero-button:hover,
+.main-section-hero-button:focus {
+    background-color: #404BBF;
+}
+/* /Main Hero Mobile Styles */
+
+/* Section Text Mobile*/
+.main-section-text-icons {
+    display: none;
+}
+
+.main-section-text {
+    padding: 96px 0;
+    justify-content: center;
+}
+
+.main-section-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding-left: 0;
+}
+
+.main-section-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main-section-paragraph {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.main-section-paragraph-text {
+    color: #434455;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/* /Section Text Mobile */
+
+/* Section Team Mobile */
+.main-section-team {
+    background-color: #F4F4FD;
+    padding: 96px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-section-team-name {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.team-container{
+    padding: 0 28px;
+}
+
+.main-section-team-list-item {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.main-section-team-list-text {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.main-section-team-list-paragraph {
+    color: #434455;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.main-section-list-team {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding-left: 0;
+}
+
+.worker-name {
+    padding: 32px 0;
+}
+
+.worker-name-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-left: 0;
+}
+
+.worker-name-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.worker-name-list-item-icon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.worker-name-list-item-icon:hover,
+.worker-name-list-item-icon:focus {
+    background-color: #404bbf;
+}
+
+.worker-name-list-item-svg {
+    fill: #f4f4fd;
+}
+/* /Section Team Mobile */
 
 /* Only Mobile Menu */
 @media screen and (max-width: 767px) {
+
     .mobile-open-btn {
             border: none;
-            padding: 0;
-            line-height: 0;
+            line-height: 0; 
+            padding-bottom: 16px;
+            padding-top: 16px;
+            background-color: transparent;
         }
 
     .mobile-menu {
@@ -228,6 +410,13 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .header-nav-list-adress {
+        color:#434455;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+    }
 }
 
 /* TABLET SCREENS */
@@ -237,6 +426,10 @@ body {
             width: 768px;
             padding: 0 16px;
         }
+
+    .header-container {
+        max-height: 72px;
+    }
 
     .mobile-menu {
         display: none;
@@ -249,7 +442,7 @@ body {
     .header-nav-list {
         display: flex;
         gap: 40px;
-        
+        padding: 16px 0;
     }
 
     .logo {
@@ -262,13 +455,14 @@ body {
         margin-right: 120px;
     }
 
+/* Header */
 .header-nav-items {
     color: #2E2F42;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     letter-spacing: 0.32px;
-    padding-bottom: 24px;
+    padding-bottom: 27px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -321,15 +515,70 @@ body {
 .header-nav-contacts:focus {
     color: #404BBF;
 }
+/* /Header */
 
+/* Main Hero */
+.main-section-hero {
+    width: 768px;
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/background-hero.jpg);
 }
+
+.main-section-hero-text {
+    font-size: 56px;
+    line-height: 1.07;
+    color: #ffffff;
+    max-width: 496px;
+    margin-bottom: 36px;
+}
+/* /Main Hero */
+
+/* Section Text */
+.main-section-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+}
+
+.main-section-list-item {
+    align-items: flex-start;
+    width: calc((100% - 24px) / 2);
+}
+/* /Section Text */
+
+/* Section Team */
+.team-container {
+    padding: 0 108px;
+}
+.main-section-team-list-item{
+    min-width: 264px;
+    width: calc((100% - 24px) / 2);
+}
+
+.main-section-list-team {
+    row-gap: 64px;
+}
+
+/* /Section Team */
+}
+
+
+
+
 
 /* DESKTOP SCREENS */
 @media screen and (min-width: 1158px) {
+
+    /* Header */
+
     .header-container {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 1440px;
         }
     
     .container {
@@ -359,6 +608,61 @@ body {
         .navigation-class {
             margin-right: 332px;
         }
+    /* /Header */
 
+    /* Main Hero */
+        .main-section-hero {
+            padding: 188px 0;
+            flex-shrink: 0;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/background-hero.jpg);
+            width: 1440px;
+            margin: 0 auto;
+        }
 
+        .main-section-hero-text {
+            margin-bottom: 48px;
+        }
+    /* /Main Hero */
+
+    /* Section Text */
+        .main-section-text {
+            display: flex;
+            padding: 120px 0;
+            justify-content: center;
+            width: 1440px;
+            margin: 0 auto;
+        }
+
+        .main-section-text-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 112px;
+            width: 264px;
+            background-color: #F4F4FD;
+            border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        .main-section-list-item {
+            display: flex;
+            flex-basis: calc((100% - 72px) / 4);
+            width: 264px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .main-section-list {
+            margin: 0 auto;
+        }
+    /* /SectionText */
+
+    /* Section Team */
+    .main-section-team{
+        width: 1440px;
+        margin: 0 auto;
+    }
+    /* /Section Team */
 }
