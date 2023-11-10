@@ -576,15 +576,11 @@ body {
 
     .header-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 1440px;
-            margin: 0 auto;
         }
     
     .container {
         box-sizing: border-box;
-        width: 1158px;
+        width: 1440px;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
