@@ -110,6 +110,16 @@ body {
     margin: 0 auto;
 }
 
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ratio: 2) {
+    .main-section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/background-hero-mob@2x.jpg);
+    }
+}
+
 .main-section-hero-text {
     font-size: 36px;
     line-height: 1.11;
@@ -994,6 +1004,16 @@ body {
         url(../images/background-hero.jpg);
 }
 
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ratio: 2) {
+    .main-section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/background-hero@2x.jpg);
+    }
+}
+
 .main-section-hero-text {
     font-size: 56px;
     line-height: 1.07;
@@ -1143,6 +1163,16 @@ body {
                 url(../images/background-hero.jpg);
             min-width: 1440px;
             margin: 0 auto;
+        }
+
+        @media screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx),
+        screen and (min-device-pixel-ratio: 2) {
+            .main-section-hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                    url(../images/background-hero@2x.jpg);
+            }
         }
 
         .main-section-hero-text {
